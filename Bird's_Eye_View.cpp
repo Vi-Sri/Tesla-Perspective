@@ -1,11 +1,11 @@
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/highgui/highgui.hpp>
+#include <opencv3/imgproc/imgproc.hpp>
+#include <opencv3/highgui/highgui.hpp>
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "opencv2/opencv_modules.hpp"
-#include "opencv2/video/background_segm.hpp"
-#include "opencv2/video/tracking.hpp"
+#include "opencv3/opencv_modules.hpp"
+#include "opencv3/video/background_segm.hpp"
+#include "opencv3/video/tracking.hpp"
 #include <Windows.h>
 
 using namespace std;
@@ -66,7 +66,7 @@ int main() {
 		Size image_size = source.size();
 		double w = (double)image_size.width, h = (double)image_size.height;
 		
-		// matrix projection 2D â 3D
+		// matrix projection 2D Ã¢ 3D
 		Mat A1 = (Mat_<float>(4, 3)<< 
 			1, 0, -w/2,
 			0, 1, -h/2,
