@@ -66,7 +66,7 @@ int main() {
 		Size image_size = source.size();
 		double w = (double)image_size.width, h = (double)image_size.height;
 		
-		// matrix projection 2D â 3D
+		// matrix projection 2D and 3D
 		Mat A1 = (Mat_<float>(4, 3)<< 
 			1, 0, -w/2,
 			0, 1, -h/2,
